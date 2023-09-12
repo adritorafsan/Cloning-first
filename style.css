@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    color: white;
+    position: relative;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.main .left-header{
+    padding: 30px 20px ;
+    width: 80px;
+    border-right: 1px solid rgba(255,255,255,0.5);
+    position: fixed;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    margin-bottom: 100px;
+    display: flex;
+    transform: rotate(-90deg);
+    gap: 35px;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.header{
+    background: transparent;
+    margin-left: 26%;
+    height: 70px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header nav{
+    display: flex;
+    gap: 40px;
+}
+.header nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    position: relative;
+}
+.header nav a::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: rgb(216,213,213);
+    left: 0;
+    border-radius: 40px;
+    top: 25px;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: transform 1.2s;
+}
+.header nav a:hover{
+    color: rgb(232,222,222);
+}
+.header nav a:hover::after{
+    transform: translateY(0px);
+    visibility: visible;
+    transition: transform 1.2s;
+}
+.search{
+    font-weight: 400;
+}
+.right-header{
+    position: absolute;
+    right: 9%;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 522px;
+    margin-top: 90px;
+}
+.right-header .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+    padding-bottom: 130px;
+}
+.first{
+    font-size: 6em;
+    
+}
+.right-header .number p{
+    border-right: 2px solid white;
+    height: 260px;
+
+}
+.second{
+    font-size: 2em;
+}
+.srcoll p{
+    transform: rotate(-90deg);
+    cursor: pointer;
+    font-size: 1.3em;
+}
