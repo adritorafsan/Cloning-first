@@ -122,3 +122,31 @@ body{
     cursor: pointer;
     font-size: 1.3em;
 }
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 10%;
+    gap: 70px;
+}
+.main-text h1{
+    font-size: 6em;
+    line-height: 79px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.main-text P{
+    line-height: 25px;
+    font-size: 1.2em;
+}
+.name-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    left: 65%;
+    top: 80%;
+    
+}
